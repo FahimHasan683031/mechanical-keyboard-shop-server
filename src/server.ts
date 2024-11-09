@@ -8,7 +8,7 @@ async function main() {
     try {
 
         await mongoose.connect(config.bd_url as string);  
-        app.listen(3000, () => {
+        app.listen(config.port, () => {
             console.log(`Server is running on the port ${config.port}`)
           });
         
